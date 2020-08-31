@@ -14,3 +14,7 @@
     color: black;
     opacity: 1;
 }
+
+#francisco ,#antonio ,#london {
+    cursor: pointer;
+}
