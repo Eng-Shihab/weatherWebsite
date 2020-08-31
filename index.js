@@ -25,3 +25,20 @@ function dailyWeather(data){
     output.appendChild(humidity);
     output.appendChild(wind);
 }
+function weaklyWeather(data){
+    // let day =parseInt(data[today].slice(-2,-1));
+    for(element of data){
+        // day++;
+        let minmaxtemp=document.createElement("h4");
+        let weatherIcon=document.createElement("img");
+        let date=document.createElement("p");
+        let output=document.createElement("div");
+        //fetch
+        minmaxtemp.innerHTML=element[minmaxtemp];
+        weatherIcon.innerHTML=element[icon];
+        date.innerHTML=element[date];
+        output.appendChild(minmaxtemp);
+        output.appendChild(date);
+        output.appendChild(weatherIcon);
+    }
+}
