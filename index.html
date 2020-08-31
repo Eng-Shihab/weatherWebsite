@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -9,19 +9,109 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-sm-12 bg-dark ">
-            Arhab Code
 
-        </div>
-        <div col-lg-8 col-sm-12>
-            shihab Code
-
-        </div>
-    </div>
-</div>
 
 <body>
-    <script src="./index.js"></script>
+    <div class="container  m-5 mx-auto ">
+        <!--weather card Start -->
+
+        <div class="row">
+            <div class=" col-lg-8 col-sm-12">
+                <div class="card bg-transparent shadow-lg  text-white  my-5">
+                    <div class="card-body">
+                        <div class="large">
+                            <h3>Friday</h3>
+                            <p class="text-light"> <span id="weather-date">25 March, 2019</span> <span id="weather-location">Sydney, Australia</span> </p>
+                        </div>
+                        <div class="weather-data ">
+                            <div class="mr-auto">
+                                <h4>32°C</h4>
+                                <p> Cloudy </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-5">
+                        <div class="d-flex text-dark font-weight-bold">
+                            <div class="card bg-transparent shadow-lg  m-1" style="max-width: 5rem;">
+                                <div class="card-header" id="day-1">Sat</div>
+                                <div class="card-body">
+                                    <p class="card-text" id="tem-1">32°C</p>
+                                </div>
+                            </div>
+                            <div class="card bg-transparent shadow-lg  m-1" style="max-width: 5rem;">
+                                <div class="card-header" id="day-2">Sun</div>
+                                <div class="card-body">
+                                    <p class="card-text" id="tem-2">32°C</p>
+                                </div>
+                            </div>
+                            <div class="card bg-transparent shadow-lg m-1 " style="max-width: 5rem;">
+                                <div class="card-header" id="day-3">Mon</div>
+                                <div class="card-body">
+                                    <p class="card-text" id="tem-3">32°C</p>
+                                </div>
+                            </div>
+                            <div class="card bg-transparent shadow-lg m-1" style="max-width: 5rem;">
+                                <div class="card-header" id="day-4">Tue</div>
+                                <div class="card-body">
+                                    <p class="card-text" id="tem-4">32°C</p>
+                                </div>
+                            </div>
+                            <div class="card bg-transparent shadow-lg m-1 " style="max-width: 5rem;">
+                                <div class="card-header" id="day-5">Wed</div>
+                                <div class="card-body">
+                                    <p class="card-text" id="tem-5">32°C</p>
+                                </div>
+                            </div>
+
+
+                            <div class="clearfix"></div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--weather card ends-->
+            </div>
+            <div class="col-lg-4 col-sm-12 text-white">
+                <ul class="list-group shadow-lg m-2 p-3 mb-3 text-dark rounded ">
+                    <li class="list-group-item d-flex justify-content-between bg-transparent align-items-center ">
+                        <input id="search" type="text" class="bg-transparent" placeholder="Enter City"><i id="search-submit" class="fa fa-search fa-2x m-1 p-1"></i>
+                    </li>
+
+                </ul>
+
+                <ul class="list-group m-2  shadow-lg p-3 mb-3 text-dark font-weight-bold rounded">
+
+                    <li class="list-group-item d-flex justify-content-between bg-transparent align-items-center">
+                        Sanaa
+                        <span class="badge badge-dark">14</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-transparent align-items-center">
+                        Aden <span class="badge badge-dark">2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-transparent align-items-center">
+                        Taiz
+                        <span class="badge badge-dark">1</span>
+                    </li>
+                </ul>
+                <ul class="list-group m-2 shadow-lg p-3 mb-3 text-dark font-weight-bold rounded ">
+                    <li class="list-group-item d-flex justify-content-between bg-transparent align-items-center">
+                        Weather Datlaies
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-transparent align-items-center">
+                        Cloudy
+                        <span class="badge badge-dark">95%</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-transparent align-items-center">
+                        Huidity <span class="badge badge-dark">62%</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-transparent align-items-center">
+                        Wind
+                        <span class="badge badge-dark">8km/h</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <script src=" ./index.js"></script>
 </body></html>
